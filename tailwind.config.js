@@ -13,7 +13,7 @@ module.exports = {
         },
         'ss-blue': {
           DEFAULT: "#6DC4DB ",
-      
+
         },
         'danger': {
           DEFAULT: '#dc3545',
