@@ -13,7 +13,7 @@ module.exports = {
         },
         'ss-blue': {
           DEFAULT: "#6DC4DB ",
-      
+
         },
         'danger': {
           DEFAULT: '#dc3545',
@@ -23,8 +23,8 @@ module.exports = {
         '2xl': '1312px'
       },
       fontFamily: {
-        'base': ["Atten New"],
-        'lead': ["ItalianDidotW90-Normal"],
+        'base': ["Lato", sans - serif],
+        'lead': ["Playfair Display", serif],
         'icomoon': ['icomoon'],
       },
     },
