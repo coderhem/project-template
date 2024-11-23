@@ -23,8 +23,8 @@ module.exports = {
         '2xl': '1312px'
       },
       fontFamily: {
-        'base': ["Lato", sans - serif],
-        'lead': ["Playfair Display", serif],
+        'base': ["Lato"],
+        'lead': ["Playfair Display"],
         'icomoon': ['icomoon'],
       },
     },
