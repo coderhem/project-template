@@ -3,7 +3,11 @@
   body {
     @apply h-full w-full;
   }
-
+.container{
+  @apply
+  max-w-[1000px]
+  mx-auto;
+}
   body {
     @apply min-w-[320px] font-base font-normal antialiased text-base lg:text-lg text-primary;
   }
