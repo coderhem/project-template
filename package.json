@@ -9,5 +9,9 @@
   "scripts": {
     "dev": "tailwindcss -i ./tailwind/tailwind.css -o ./assets/css/style.css --watch --postcss --minify",
     "build": "tailwindcss -i ./tailwind/tailwind.css -o ./assets/css/style.css --postcss --minify"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3"
   }
 }

@@ -1,0 +1,208 @@
+.stretched-link {
+  @apply before:absolute
+before:inset-0;
+}
+
+.bell {
+  animation: ring 4s 0.7s ease-in-out infinite;
+  transform-origin: 50% 4px;
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(0);
+  }
+  1% {
+    transform: rotate(30deg);
+  }
+  3% {
+    transform: rotate(-28deg);
+  }
+  5% {
+    transform: rotate(34deg);
+  }
+  7% {
+    transform: rotate(-32deg);
+  }
+  9% {
+    transform: rotate(30deg);
+  }
+  11% {
+    transform: rotate(-28deg);
+  }
+  13% {
+    transform: rotate(26deg);
+  }
+  15% {
+    transform: rotate(-24deg);
+  }
+  17% {
+    transform: rotate(22deg);
+  }
+  19% {
+    transform: rotate(-20deg);
+  }
+  21% {
+    transform: rotate(18deg);
+  }
+  23% {
+    transform: rotate(-16deg);
+  }
+  25% {
+    transform: rotate(14deg);
+  }
+  27% {
+    transform: rotate(-12deg);
+  }
+  29% {
+    transform: rotate(10deg);
+  }
+  31% {
+    transform: rotate(-8deg);
+  }
+  33% {
+    transform: rotate(6deg);
+  }
+  35% {
+    transform: rotate(-4deg);
+  }
+  37% {
+    transform: rotate(2deg);
+  }
+  39% {
+    transform: rotate(-1deg);
+  }
+  41% {
+    transform: rotate(1deg);
+  }
+
+  43% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.sublist li {
+  @apply bg-white
+  hover:bg-secondary/10
+  relative
+  p-3;
+}
+
+.header-mobile {
+  @apply max-lg:!translate-y-0
+  transition-all
+  overflow-visible
+  duration-500;
+}
+
+.header-mobile #mobile-nav {
+  @apply transition-all
+  max-lg:!translate-y-0
+  duration-500;
+}
+
+.header-mobile .nav-wrapper {
+  @apply !overflow-visible
+  transition-all
+  duration-500;
+}
+
+.table-body tr:first-child {
+  counter-reset: num-counter;
+}
+.table-body tr:nth-child(-n + 9) td:first-child::before {
+  counter-increment: num-counter;
+  content: "0" counter(num-counter) ".";
+}
+.table-body tr:nth-child(n + 10) td:first-child::before {
+  counter-increment: num-counter;
+  content: "" counter(num-counter) ".";
+}
+.table-body tr td {
+  @apply p-3;
+}
+.status {
+  @apply py-1
+px-3
+rounded-xl
+text-white 
+min-w-[70px]
+inline-block
+text-center;
+}
+
+.pending {
+  @apply bg-orange;
+}
+
+.cancled {
+  @apply bg-red;
+}
+
+.completed {
+  @apply bg-green;
+}
+
+.unpaid {
+  @apply bg-red;
+}
+
+thead th {
+  @apply text-black
+  p-3
+  border-b
+  border-black/20;
+}
+
+.table-wrapper {
+  @apply overflow-x-auto p-5 text-xs text-left;
+}
+
+table {
+  @apply w-full;
+}
+
+* {
+  scrollbar-color: #283593 #fff; /* Thumb and track color */
+  scrollbar-width: thin; /* Options: auto, thin, none */
+}
+
+.fee{
+  @apply
+  text-red;
+}
+
+.form-wrapper{
+  @apply
+  flex
+  flex-wrap
+  gap-y-5
+  -mx-5;
+}
+.form-group{
+  @apply
+  w-full
+  md:w-1/2
+  lg:w-1/3
+  px-5
+  flex
+  flex-col
+  gap-y-2;
+}
+
+.form-control{
+  @apply
+  py-3
+  px-5
+  h-12
+  border
+  border-primary/30
+  focus:ring-2
+  ring-primary
+  focus-within:outline-none
+  transition-all 
+  duration-300;
+}

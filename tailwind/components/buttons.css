@@ -6,8 +6,7 @@
 		cursor-pointer 
 		px-5 
 		py-[10px] 
-		text-base 
-		lg:text-lg 
+		text-xs 
 		text-center 
 		!leading-none 
 		font-normal 
@@ -41,7 +40,7 @@
     active:bg-primary/50 
     active:border-primary/50;
   }
-	.btn-outline {
+  .btn-outline {
     @apply bg-transparent 
     text-white 
     border-primary 
@@ -56,6 +55,10 @@
     active:border-primary/50;
   }
 
+  .btn-round {
+    @apply
+    rounded-full text-xs text-primary ;
+  }
   .btn-block {
     @apply block w-full;
   }

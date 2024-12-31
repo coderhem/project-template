@@ -1,7 +1,10 @@
 @import 'tailwindcss/base';
 @import 'global-css/body-style.css';
+@import 'global-css/typography.css';
 
 @import 'tailwindcss/components';
+@import 'components/buttons.css';
+@import 'components/slider.css';
 
 @import 'tailwindcss/utilities';
-
+@import 'external-css/externl.css';

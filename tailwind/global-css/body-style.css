@@ -1,26 +1,39 @@
 @layer base {
   html,
   body {
-    @apply h-full w-full;
+    @apply h-full w-full bg-gray-200;
   }
-.container{
-  @apply
-  max-w-[1000px]
-  mx-auto;
-}
+  .container {
+    @apply max-w-[1440px]
+  mx-auto 
+  px-5;
+  }
   body {
-    @apply min-w-[320px] font-base font-normal antialiased text-base lg:text-lg text-primary;
+    @apply min-w-[320px] font-base font-normal antialiased text-base lg:text-lg text-grey-100;
+  }
+
+  img {
+    @apply inline-block;
   }
 
   p {
-    @apply mb-4 text-secondary/60;
+    @apply mb-4;
   }
 
   a {
-    @apply text-primary no-underline transition-all hover:text-primary/50 focus:text-primary/50;
+    @apply text-secondary
+     no-underline 
+     transition-all
+     duration-300
+      hover:text-secondary-100
+       focus:text-secondary-100;
   }
 
   picture {
+    @apply block;
+  }
+
+  strong {
     @apply block;
   }
 
