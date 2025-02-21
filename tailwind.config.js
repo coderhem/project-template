@@ -3,18 +3,22 @@
 module.exports = {
   content: ["./**/*.html"],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+      }
+    },
     extend: {
       colors: {
         'primary': {
-          DEFAULT: "#253E48",
+          DEFAULT: "#8D4DFF",
         },
-        'secondary': {
-          DEFAULT: "#1C2427",
-          100: "#1F617B",
+        'gary': {
+          DEFAULT: "#3D3C3C",
         },
-        'ss-blue': {
-          DEFAULT: "#6DC4DB ",
-
+        'purple': {
+          DEFAULT: "#8936B3",
         },
         'danger': {
           DEFAULT: '#dc3545',
@@ -24,8 +28,8 @@ module.exports = {
         '2xl': '1312px'
       },
       fontFamily: {
-        'base': ["Atten New"],
-        'lead': ["ItalianDidotW90-Normal"],
+        'lead': ["Kanit"],
+        'base': ["Lato"],
         'icomoon': ['icomoon'],
       },
     },

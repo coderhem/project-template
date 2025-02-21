@@ -9,11 +9,11 @@
   mx-auto;
 }
   body {
-    @apply min-w-[320px] font-base font-normal antialiased text-base lg:text-lg text-primary;
+    @apply min-w-[320px] font-base font-normal antialiased text-base lg:text-lg text-gary;
   }
 
   p {
-    @apply mb-4 text-secondary/60;
+    @apply mb-4;
   }
 
   a {

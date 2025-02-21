@@ -10,15 +10,15 @@
 
   h1,
   .h1 {
-    @apply text-3xl lg:text-4xl xl:text-[52px]/normal;
+    @apply text-3xl md:text-4xl lg:text-5xl xl:text-[64px] xl:leading-[1.15];
   }
   h2,
   .h2 {
-    @apply text-3xl lg:text-4xl xl:text-[52px]/normal relative inline-block;
+    @apply text-3xl lg:text-4xl;
   }
   h3,
   .h3 {
-    @apply text-2xl lg:text-[32px];
+    @apply text-2xl lg:text-[28px];
   }
   h4,
   .h4 {

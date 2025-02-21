@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?86t0wu');
-  src:  url('fonts/icomoon.eot?86t0wu#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?86t0wu') format('truetype'),
-    url('fonts/icomoon.woff?86t0wu') format('woff'),
-    url('fonts/icomoon.svg?86t0wu#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?sxunme');
+  src:  url('fonts/icomoon.eot?sxunme#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?sxunme') format('truetype'),
+    url('fonts/icomoon.woff?sxunme') format('woff'),
+    url('fonts/icomoon.svg?sxunme#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,30 +25,81 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-next-arrow:before {
+.icon-arrow-right:before {
   content: "\e900";
 }
-.icon-previous-arrow:before {
+.icon-arrow-left:before {
   content: "\e901";
 }
-.icon-world:before {
+.icon-bio:before {
   content: "\e902";
 }
-.icon-dropdown-arrow:before {
-  content: "\e903";
-}
-.icon-star:before {
+.icon-wave:before {
   content: "\e904";
 }
-.icon-right-arrow:before {
+.icon-maketing:before {
   content: "\e905";
 }
-.icon-left-arrow:before {
+.icon-services:before {
   content: "\e906";
 }
-.icon-list:before {
+.icon-circle:before {
   content: "\e907";
 }
-.icon-video:before {
+.icon-van:before {
   content: "\e908";
+}
+.icon-smile:before {
+  content: "\e909";
+}
+.icon-users:before {
+  content: "\e90a";
+}
+.icon-calendar:before {
+  content: "\e90b";
+}
+.icon-user:before {
+  content: "\e90c";
+}
+.icon-home:before {
+  content: "\e90d";
+}
+.icon-headphone:before {
+  content: "\e90e";
+}
+.icon-slider-left:before {
+  content: "\e90f";
+}
+.icon-slider-right:before {
+  content: "\e910";
+}
+.icon-button-left:before {
+  content: "\e911";
+}
+.icon-button-right:before {
+  content: "\e912";
+}
+.icon-search:before {
+  content: "\e913";
+}
+.icon-twitter:before {
+  content: "\e914";
+}
+.icon-skype:before {
+  content: "\e915";
+}
+.icon-linkedin:before {
+  content: "\e916";
+}
+.icon-instagram:before {
+  content: "\e917";
+}
+.icon-facebook:before {
+  content: "\e918";
+}
+.icon-mail:before {
+  content: "\e919";
+}
+.icon-phone:before {
+  content: "\e91a";
 }

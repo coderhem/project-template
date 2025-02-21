@@ -11,3 +11,6 @@ logs/
 *.log
 yarn-debug.log*
 yarn-error.log*
+.vscode
+pnpm-lock.yaml
+package-lock.json
