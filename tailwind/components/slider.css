@@ -1,12 +1,94 @@
-/* slick-same-height */
-.slick-same-height {
-  @apply md:[&_.slick-track]:flex md:[&_.slick-slide]:h-[inherit];
+.swiper .swiper-pagination{
+  @apply
+  static
+  bottom-0
+  mt-10
 }
 
-.hide-dots .slick-dots {
-  @apply !hidden;
+.swiper .swiper-pagination-bullet{
+  @apply
+  transition-all
+  duration-500
+  bg-primary;
 }
 
-.hide-dots .slick-arrow {
-  @apply !hidden;
+.swiper .swiper-pagination-bullet-active{
+  @apply
+  w-10
+  rounded-lg
+  bg-purple;
+}
+.teamSlider .swiper-pagination-bullet-active{
+  @apply
+  w-10
+  rounded-lg
+  bg-primary;
+}
+
+.portfolio-slider-buttons {
+@apply
+flex
+items-center
+gap-2
+justify-center
+mt-16;
+}
+
+.portfolio-slider-buttons .swiper-button-prev, 
+.portfolio-slider-buttons .swiper-button-next{
+@apply
+static
+text-primary
+after:text-2xl
+border
+border-primary
+bg-primary
+text-white
+hover:text-primary
+focus:text-primary
+active:text-primary
+rounded-lg
+size-11
+hover:bg-transparent
+focus:bg-transparent
+active:bg-transparent
+
+transition-all
+duration-300;
+}
+
+.portfolio-slider-buttons .swiper-button-prev{
+  @apply
+  after:content-['\e901']
+  after:font-icomoon;
+}
+.portfolio-slider-buttons .swiper-button-next{
+  @apply
+  after:content-['\e900']
+  after:font-icomoon;
+  
+}
+
+@keyframes logoPartners {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.logoPartners figure{
+  animation: logoPartners 10s linear infinite;
+}
+.logoPartners:hover figure {
+  animation-play-state: paused;
+}
+
+.logoPartners figure{
+@apply
+w-1/2
+sm:w-1/3
+md:w-1/4
+lg:w-1/5;
+
 }

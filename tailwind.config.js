@@ -19,6 +19,8 @@ module.exports = {
         },
         'purple': {
           DEFAULT: "#8936B3",
+          100: "#FF4DD3",
+          200: "#FF4DFF",
         },
         'danger': {
           DEFAULT: '#dc3545',

@@ -9,7 +9,7 @@
   mx-auto;
 }
   body {
-    @apply min-w-[320px] font-base font-normal antialiased text-base lg:text-lg text-gary;
+    @apply min-w-[320px] font-base font-normal antialiased text-sm sm:text-base text-gary;
   }
 
   p {
@@ -37,4 +37,5 @@
   .site-wrapper {
     @apply min-w-[20rem] mx-auto my-0 flex min-h-full relative overflow-hidden items-stretch flex-col;
   }
+
 }

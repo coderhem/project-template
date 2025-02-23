@@ -1,0 +1,128 @@
+.sticky .nav-wrapper{
+    @apply
+    fixed
+    top-0
+    left-0
+    right-0
+    bg-white
+    shadow-lg
+    z-[5];
+}
+.navbar.active .nav{
+ @apply
+left-0
+top-0
+bottom-0
+bg-white
+z-10
+py-20
+p-7
+sm:p-36
+h-lvh
+overflow-y-auto;
+}
+
+.navbar.active .nav .link-wrapper{
+ @apply
+ flex-col
+ gap-y-10;
+}
+
+.navbar.active .nav .link-wrapper li a{
+ @apply
+ text-lg;
+}
+
+.nav{
+ @apply
+ absolute
+ -left-full
+ top-0
+ bottom-0
+ transition-all
+ ease-in-out
+ duration-300
+ lg:static
+ lg:block
+}
+
+.navbar .hamburger{
+@apply
+cursor-pointer
+flex
+flex-col
+lg:hidden
+}
+
+.navbar .hamburger span{
+ @apply
+ w-9
+ h-1
+ bg-purple
+ inline-block
+ rounded-3xl
+ mb-2
+ last:mb-0
+ transition-all;
+}
+
+.navbar.active .hamburger span{
+ @apply
+ mb-0;
+}
+
+.navbar.active .hamburger span:nth-child(1){
+ @apply
+ rotate-45
+ translate-y-[50%]
+}
+
+.navbar.active .hamburger span:nth-child(2){
+ @apply
+hidden;
+}
+
+.navbar.active .hamburger span:nth-child(3){
+ @apply
+ -rotate-45
+ translate-y-[-50%]
+}
+
+.link-wrapper{
+ @apply
+ flex
+ flex-col
+ lg:flex-row;
+}
+
+.link-wrapper li{
+ @apply
+ mr-14
+ last:mr-0;
+}
+
+.link-wrapper li a{
+ @apply
+text-black
+font-lead
+font-semibold
+uppercase
+hover:text-purple
+focus:text-purple
+active:text-purple
+relative
+ before:absolute
+ before:bottom-0
+ before:left-0
+ before:w-0
+ before:h-[2px]
+ before:rounded-tr-full
+ before:rounded-br-full
+ before:bg-purple
+ before:hover:w-9/12
+ before:focus:w-9/12
+ before:active:w-9/12
+ before:transition-all
+ before:duration-300
+ duration-300;
+}
