@@ -8,14 +8,51 @@
     shadow-lg
     z-[5];
 }
+
+.nav{
+    @apply
+    fixed
+    -translate-x-full
+    inset-0
+    transition-all
+    ease-in-out
+    duration-500
+    lg:static
+    lg:block
+    lg:translate-x-0
+   }
+   
+   .navbar .hamburger{
+   @apply
+   cursor-pointer
+   flex
+   flex-col
+   lg:hidden
+   relative
+   z-20
+   }
+   
+   .navbar .hamburger span{
+    @apply
+    w-9
+    h-1
+    bg-purple
+    inline-block
+    rounded-3xl
+    mb-2
+    last:mb-0
+    transition-all;
+   }
+.no-scroll{
+    @apply
+    fixed;
+    }
 .navbar.active .nav{
  @apply
-left-0
-top-0
-bottom-0
+translate-x-0
 bg-white
 z-10
-py-20
+pt-28
 p-7
 sm:p-36
 h-lvh
@@ -31,39 +68,6 @@ overflow-y-auto;
 .navbar.active .nav .link-wrapper li a{
  @apply
  text-lg;
-}
-
-.nav{
- @apply
- absolute
- -left-full
- top-0
- bottom-0
- transition-all
- ease-in-out
- duration-300
- lg:static
- lg:block
-}
-
-.navbar .hamburger{
-@apply
-cursor-pointer
-flex
-flex-col
-lg:hidden
-}
-
-.navbar .hamburger span{
- @apply
- w-9
- h-1
- bg-purple
- inline-block
- rounded-3xl
- mb-2
- last:mb-0
- transition-all;
 }
 
 .navbar.active .hamburger span{

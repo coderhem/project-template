@@ -22,13 +22,30 @@ $('a.slow-scrool[href^="#"]').click(function (e) {
 
 const navBar = document.querySelector('#navBar');
 const HamBurger = document.querySelector('#HamBurger');
+const navLinks = document.querySelectorAll('#navBar a');
+const body = document.body;
 
-HamBurger.addEventListener('click', () => {
+HamBurger.addEventListener('click', (event) => {
   navBar.classList.toggle("active");
-})
+  body.classList.toggle("no-scroll", navBar.classList.contains("active")); // Sync with navbar state
+  event.stopPropagation();
+});
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navBar.classList.remove("active");
+    body.classList.remove("no-scroll");
+  });
+});
+
+document.body.addEventListener('click', (event) => {
+  if (!navBar.contains(event.target) && event.target !== HamBurger) {
+    navBar.classList.remove("active");
+    body.classList.remove("no-scroll");
+  }
+});
 
 window.onscroll = function() {myFunction()};
-
 var header = document.getElementById("Header");
 var sticky = header.offsetTop;
 var sticky = 88;
