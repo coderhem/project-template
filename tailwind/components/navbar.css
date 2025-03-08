@@ -43,18 +43,21 @@
     last:mb-0
     transition-all;
    }
+   
 .no-scroll{
     @apply
     fixed;
     }
+
 .navbar.active .nav{
  @apply
 translate-x-0
 bg-white
 z-10
 pt-28
+sm:pt-20
+lg:pt-0
 p-7
-sm:p-36
 h-lvh
 overflow-y-auto;
 }
